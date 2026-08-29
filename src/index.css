@@ -52,6 +52,7 @@
     --radius-3xl: calc(var(--radius) * 2.2);
     --radius-4xl: calc(var(--radius) * 2.6);
     --animate-char-in: char-in 0.5s var(--ease-out) both;
+    --animate-fade-bounce: scroll-down 1.5s both;
 }
 
 :root {
@@ -145,6 +146,34 @@
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  1% { 
+    opacity: 1;
+    transform: translateY(0)
+  }
+  
+  25% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-5px);
+  }
+
+  100% {
     transform: translateY(0);
   }
 }
