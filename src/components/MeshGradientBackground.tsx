@@ -26,7 +26,10 @@ export function MeshGradientBackground({
   return (
     <div
       className={cn("fixed inset-0 overflow-hidden", className)}
-      style={{ backgroundColor }}
+      style={{
+        backgroundColor,
+        transition: "opacity 0.3s ease-in-out",
+      }}
     >
       {/* Gradient orbs */}
       <div className="absolute inset-0">

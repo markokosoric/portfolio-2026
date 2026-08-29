@@ -10,8 +10,8 @@ import CustomTrigger from "./CustomTrigger"
 
 const NavBar = () => {
   return (
-    <NavigationMenu className="m-4 max-w-full justify-between rounded-full border border-neutral-400/20 bg-neutral-300/20 p-4 text-neutral-600 backdrop-blur-[1px] dark:bg-neutral-400/20 dark:text-neutral-300">
-      <Avatar size="lg">
+    <NavigationMenu className="fixed top-0 right-0 left-0 z-50 m-4 max-w-full justify-between rounded-full border border-border/20 bg-primary/20 p-4 text-primary-foreground backdrop-blur-[1px]">
+      <Avatar size="lg" className="after:border-none">
         <AvatarImage src="/me.jpg" alt="profile" />
         <AvatarFallback>MK</AvatarFallback>
       </Avatar>

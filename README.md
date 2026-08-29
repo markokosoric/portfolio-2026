@@ -19,3 +19,9 @@ To use the components in your app, import them as follows:
 ```tsx
 import { Button } from "@/components/ui/button"
 ```
+
+## TODO LIST
+
+- Change to only one background object
+- Fix dark mode flashing when refreshing
+- Compress photos
