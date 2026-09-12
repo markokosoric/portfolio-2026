@@ -5,6 +5,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import profilePhoto from "@/assets/me.jpg"
 import ColorModeSwitch from "./ColorModeSwitch"
 import CustomTrigger from "./CustomTrigger"
 
@@ -12,7 +13,7 @@ const NavBar = () => {
   return (
     <NavigationMenu className="fixed top-0 right-0 left-0 z-50 m-4 max-w-full justify-between rounded-full border border-border/20 bg-primary/20 p-4 text-primary-foreground backdrop-blur-[1px]">
       <Avatar size="lg" className="after:border-none">
-        <AvatarImage src="/me.jpg" alt="profile" />
+        <AvatarImage src={profilePhoto} alt="profile" />
         <AvatarFallback>MK</AvatarFallback>
       </Avatar>
       <NavigationMenuList className="hidden gap-10 md:flex">

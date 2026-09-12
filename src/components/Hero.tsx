@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className={`absolute bottom-2 w-full transition-opacity duration-200 ${isVisible ? "opacity-100" : "opacity-0"}`}
+        className={`absolute bottom-10 w-full transition-opacity duration-200 ${isVisible ? "opacity-100" : "opacity-0"}`}
       >
         <div
           className="flex animate-fade-bounce flex-col items-center text-primary-foreground"
