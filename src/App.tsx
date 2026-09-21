@@ -19,7 +19,8 @@ export function App() {
           />
           <NavBar />
           <Hero />
-          <div className="pb-12 lg:pb-15">
+          <div className="relative z-10 mx-auto flex w-100 flex-col gap-5 pb-12 md:w-150 lg:w-200 lg:pb-15">
+            <h1 className="text-3xl">About Me</h1>
             <About />
           </div>
         </SidebarInset>
